@@ -37,6 +37,8 @@ namespace Calculator
             this.txt3 = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
             this.bt1 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -98,7 +100,7 @@ namespace Calculator
             // 
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(173, 197);
+            this.btn1.Location = new System.Drawing.Point(28, 197);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(75, 31);
             this.btn1.TabIndex = 2;
@@ -110,7 +112,7 @@ namespace Calculator
             // 
             this.bt1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt1.Location = new System.Drawing.Point(173, 234);
+            this.bt1.Location = new System.Drawing.Point(109, 198);
             this.bt1.Name = "bt1";
             this.bt1.Size = new System.Drawing.Size(75, 30);
             this.bt1.TabIndex = 4;
@@ -118,11 +120,37 @@ namespace Calculator
             this.bt1.UseVisualStyleBackColor = true;
             this.bt1.Click += new System.EventHandler(this.bt1_Click);
             // 
+            // btn3
+            // 
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.Location = new System.Drawing.Point(190, 199);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(75, 31);
+            this.btn3.TabIndex = 5;
+            this.btn3.Text = "Nhân";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            // 
+            // btn4
+            // 
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.Location = new System.Drawing.Point(271, 200);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(75, 28);
+            this.btn4.TabIndex = 6;
+            this.btn4.Text = "Chia";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(395, 308);
+            this.Controls.Add(this.btn4);
+            this.Controls.Add(this.btn3);
             this.Controls.Add(this.bt1);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.txt3);
@@ -148,6 +176,8 @@ namespace Calculator
         private System.Windows.Forms.TextBox txt3;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button bt1;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btn4;
     }
 }
 

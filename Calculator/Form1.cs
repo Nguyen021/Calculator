@@ -34,5 +34,21 @@ namespace Calculator
             double c = a - b;
             txt3.Text = c.ToString();
         }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            int a, b, KetQua;
+            a = int.Parse(txt1.Text);
+            b = int.Parse(txt2.Text);
+            KetQua = a * b;
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            double a, b, KetQua;
+            a = double.Parse(txt1.Text);
+            b = double.Parse(txt2.Text);
+            KetQua = a * b;
+        }
     }
 }
