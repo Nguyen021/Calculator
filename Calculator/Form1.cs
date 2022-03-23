@@ -27,11 +27,27 @@ namespace Calculator
             txt3.Text = c.ToString();
         }
 
-        private void bt1_Click(object sender, EventArgs e)
+        private void btn2_Click(object sender, EventArgs e)
         {
             double a = double.Parse(txt1.Text);
             double b = double.Parse(txt2.Text);
             double c = a - b;
+            txt3.Text = c.ToString();
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(txt1.Text);
+            double b = double.Parse(txt2.Text);
+            double c = a * b;
+            txt3.Text = c.ToString();
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(txt1.Text);
+            double b = double.Parse(txt2.Text);
+            double c = a / b;
             txt3.Text = c.ToString();
         }
     }
