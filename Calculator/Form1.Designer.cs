@@ -75,7 +75,7 @@ namespace Calculator
             this.txt2.Location = new System.Drawing.Point(162, 76);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(100, 20);
-            this.txt2.TabIndex = 1;
+            this.txt2.TabIndex = 2;
             this.txt2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
@@ -96,7 +96,7 @@ namespace Calculator
             this.txt3.Name = "txt3";
             this.txt3.ReadOnly = true;
             this.txt3.Size = new System.Drawing.Size(100, 20);
-            this.txt3.TabIndex = 1;
+            this.txt3.TabIndex = 3;
             this.txt3.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btn1
@@ -109,6 +109,7 @@ namespace Calculator
             this.btn1.TabIndex = 2;
             this.btn1.Text = "Cộng";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // Form1
             // 
